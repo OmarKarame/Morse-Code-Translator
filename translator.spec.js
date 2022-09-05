@@ -20,7 +20,7 @@ describe('Testing translateToMorse, should turn a into .- not .- / ', () => {
         str = 'a';
         let result = translateToMorse(str);
         // Assert
-        expect(result).shouldNot('.- / ');
+        expect(result).not.toBe('.- / ');
     })
 })
 
@@ -96,27 +96,27 @@ describe('Testing translateToMorse, should turn int 21 into ..--- .----', () => 
     })
 })
 
-describe('Testing translateToMorse, should print an error message if an array was inputed', () => {
-    it("[0, 1, 3] should print Please enter strings and ints please.", () => {
+describe('Testing translateToMorse, should print the contents of the array', () => {
+    it("[0, 1, 3] should print ----- --..-- .---- --..-- ...--", () => {
         // Arrange
         let arr;
         // Act
         arr = [0, 1, 3];
         let result = translateToMorse(arr);
         // Assert
-        expect(result).toBe('Please enter strings and ints please.');
+        expect(result).toBe('----- --..-- .---- --..-- ...--');
     })
 })
 
 describe('Testing translateToMorse, should turn omar karame is coding. into --- -- .- .-. / -.- .- .-. .- -- . / .. ... / -.-. --- -.. .. -. --. .-.-.-', () => {
-    it("omar karame is coding. should translate to --- -- .- .-. / -.- .- .-. .- -- . / .. ... / -.-. --- -.. .. -. --. .-.-.-", () => {
+    it("This is being translated to morse! should translate to - .... .. ... / .. ... / -... . .. -. --. / - .-. .- -. ... .-.. .- - . -.. / - --- / -- --- .-. ... . -.-.--", () => {
         // Arrange
         let str;
         // Act
-        str = 'omar karame is coding.';
+        str = 'This is being translated to morse!';
         let result = translateToMorse(str);
         // Assert
-        expect(result).toBe('--- -- .- .-. / -.- .- .-. .- -- . / .. ... / -.-. --- -.. .. -. --. .-.-.-');
+        expect(result).toBe('- .... .. ... / .. ... / -... . .. -. --. / - .-. .- -. ... .-.. .- - . -.. / - --- / -- --- .-. ... . -.-.--');
     })
 })
 
@@ -125,10 +125,10 @@ describe('Testing translateToMorse, should turn Is Omar Karame coding? into .. .
         // Arrange
         let str;
         // Act
-        str = 'Is Omar Karame coding?';
+        str = 'is omar karame coding?';
         let result = translateToMorse(str);
         // Assert
-        expect(result).toBe('--- -- .- .-. / -.- .- .-. .- -- . / .. ... / -.-. --- -.. .. -. --. .-.-.-');
+        expect(result).toBe('.. ... / --- -- .- .-. / -.- .- .-. .- -- . / -.-. --- -.. .. -. --. ..--..');
     })
 })
 
