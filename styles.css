@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#outputs {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  font-size: 1rem;
+}
+
+#btn {
+  border: 0.2rem solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  background-color: aquamarine;
+}
+
+#word-input {
+  height: 2rem;
+  width: 30rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+
+.output {
+  margin: 0.5rem;
+}
+
+h3 {
+  height: 10rem;
+  width: 20rem;
+  border: 0.2rem solid black;
+}
