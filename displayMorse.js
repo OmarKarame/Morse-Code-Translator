@@ -8,7 +8,6 @@ let translation = () => {
     let string = document.querySelector('#word-input').value;
 
     morseDisplay.innerHTML = translateToMorse(string);
-    // morseDisplay.innerHTML += `${morse}`
 
     englishDisplay.innerHTML = ``;
     englishDisplay.innerHTML += `${string}`    
